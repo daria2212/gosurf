@@ -1,0 +1,70 @@
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.subtitle-left {
+  @include reset-style;
+  display: inline-block;
+  position: relative;
+  padding-left: 103px;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+  }
+}
+
+.button {
+  display: block;
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #000000;
+  border-radius: 10px;
+}
