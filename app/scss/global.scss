@@ -22,6 +22,8 @@ body {
   font-size: 22px;
   font-weight: 400;
   color: #ffffff;
+  background-color: #171919;
+  text-transform: uppercase;
 }
 
 *,
@@ -33,13 +35,21 @@ body {
 a {
   display: inline-block;
   text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .subtitle-left {
   @include reset-style;
   display: inline-block;
   position: relative;
+  margin-bottom: 8px;
   padding-left: 103px;
+  font-weight: normal;
   font-size: 22px;
   line-height: 32px;
   letter-spacing: 7.33333px;
@@ -57,14 +67,80 @@ a {
   }
 }
 
+.title {
+  span {
+    @include reset-style;
+    display: inline-block;
+    position: relative;
+    font-weight: 800;
+    font-size: 200px;
+    color: rgba(#ffffff, 0.02);
+    transform: translateX(-50px);
+  }
+  h2 {
+    @include reset-style;
+    font-size: 80px;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 1px;
+      background-color: $green;
+    }
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  text-align: right;
+  &__caption {
+    @include reset-style;
+    padding-right: 5px;
+    font-weight: 800;
+    font-size: 40px;
+    span {
+      font-weight: 100;
+    }
+  }
+}
+
 .button {
-  display: block;
-  padding: 14px 20px;
   text-align: center;
-  font-size: 10px;
-  line-height: 10px;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 36px;
   text-transform: uppercase;
-  color: #ffffff;
-  background: #000000;
-  border-radius: 10px;
+  span {
+    display: inline-block;
+    position: relative;
+    padding: 17px 57px 15px 17px;
+    background-color: $green;
+    margin-left: 19px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -10px;
+      width: 20px;
+      height: 1px;
+      background-color: #fff;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      width: 25px;
+      height: 21px;
+      background-image: url(../images/next.svg);
+      background-repeat: no-repeat;
+      transform: translateY(-50%);
+    }
+  }
 }
