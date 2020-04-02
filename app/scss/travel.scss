@@ -1,0 +1,89 @@
+.travel {
+    padding: 160px 0 260px;
+    background-image: url(../images/glass.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    &-slider {
+        @include reset-style;
+    }
+    .slider-arrows {
+        top: 250px;
+        opacity: .5;
+    }
+}
+
+.travel-item {
+    &__header {
+        background-repeat: no-repeat;
+        background-position: top left;
+        min-height: 780px;
+    }
+    &__subtitle {
+        padding-right: 80px;
+        padding-top: 132px;
+        text-align: right;
+    }
+    &__descr {
+        margin-top: -230px;
+        padding: 160px 0 0 132px;
+        min-height: 320px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        .descr__caption {
+            position: relative;
+            padding-right: 78px;
+            img {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    &__button {
+        text-align: center;
+    }
+}
+
+.travel-info {
+    @include reset-style;
+    display: flex;
+    justify-content: space-around;
+    &__item {
+        position: relative;
+        min-height: 200px;
+        margin-bottom: 66px;
+        span {
+            position: absolute;
+            font-size: 14px;
+            line-height: 36px;
+            letter-spacing: 5.25px;
+            text-transform: uppercase;
+            color: rgba(#fff, .75);
+            top: 30px;
+            right: 0;
+        }
+    }
+    &__parameters {
+        position: absolute;
+        top: 90px;
+        left: -140px;
+        width: 200px;
+        height: 0;
+        @include reset-style;
+        white-space: nowrap; 
+        text-align: right;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 8px;
+        opacity: 0.5;
+        transform: rotate(-90deg);
+    }
+    &__values {
+        @include reset-style;
+        white-space: pre-line;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 36px;
+    }
+}
