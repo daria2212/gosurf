@@ -44,27 +44,27 @@ a {
 }
 
 .subtitle-left {
-    @include reset-style;
-    display: inline-block;
-    position: relative;
-    margin-bottom: 8px;
-    padding-left: 103px;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 32px;
-    letter-spacing: 7.33333px;
-    text-transform: uppercase;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    &:before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 50%;
-      width: 80px;
-      height: 1px;
-      background-color: #ffffff;
-    }
+  @include reset-style;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 8px;
+  padding-left: 103px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  letter-spacing: 7.33333px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 80px;
+    height: 1px;
+    background-color: #ffffff;
+  }
 }
 
 .title {
@@ -114,6 +114,7 @@ a {
   display: inline-block;
   &__caption {
     @include reset-style;
+    white-space: pre-line;
     font-weight: 800;
     font-size: 40px;
     span {
@@ -129,7 +130,7 @@ a {
     font-weight: normal;
     font-size: 22px;
     line-height: 32px;
-    letter-spacing: 7.33333px; 
+    letter-spacing: 7.33333px;
     text-transform: uppercase;
     mix-blend-mode: normal;
     opacity: 0.5;
@@ -176,6 +177,74 @@ a {
       background-image: url(../images/next.svg);
       background-repeat: no-repeat;
       transform: translateY(-50%);
-    }
+    } 
   }
+}
+
+.rating {
+  @include reset-style;
+  display: flex;
+  align-items: center;
+  li {
+      margin-right: 11px;
+      &:last-child {
+          margin-right: 0;
+      }
+  }
+}
+
+.quantity {
+  display: inline-block;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 55px;
+  height: 42px;
+  display: block;
+  font-weight: 800;
+  line-height: 36px;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: static;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  top: 55px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  right: 0;
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  right: 25px;
 }

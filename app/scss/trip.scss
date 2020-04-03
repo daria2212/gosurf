@@ -1,18 +1,21 @@
-.travel {
+.trip {
     padding: 160px 0 260px;
     background-image: url(../images/glass.png);
     background-repeat: no-repeat;
     background-position: bottom right;
+    &.sleep {
+        background-image: url(../images/flower-big.png);
+    }
     &-slider {
         @include reset-style;
     }
     .slider-arrows {
         top: 250px;
-        opacity: .5;
+        opacity: 0.5;
     }
 }
 
-.travel-item {
+.trip-item {
     &__header {
         background-repeat: no-repeat;
         background-position: top left;
@@ -29,6 +32,7 @@
         min-height: 320px;
         background-repeat: no-repeat;
         background-position: right center;
+        background-size: contain;
         .descr__caption {
             position: relative;
             padding-right: 78px;
@@ -44,7 +48,14 @@
     }
 }
 
-.travel-info {
+.descr__caption-wrapper {
+    display: flex;
+    .descr__caption {
+        padding-right: 25px;
+    }
+}
+
+.trip-info {
     @include reset-style;
     display: flex;
     justify-content: space-around;
@@ -52,16 +63,16 @@
         position: relative;
         min-height: 200px;
         margin-bottom: 66px;
-        span {
-            position: absolute;
-            font-size: 14px;
-            line-height: 36px;
-            letter-spacing: 5.25px;
-            text-transform: uppercase;
-            color: rgba(#fff, .75);
-            top: 30px;
-            right: 0;
-        }
+    }
+    &__measure {
+        position: absolute;
+        font-size: 14px;
+        line-height: 36px;
+        letter-spacing: 5.25px;
+        text-transform: uppercase;
+        color: rgba(#fff, 0.75);
+        top: 30px;
+        right: 0;
     }
     &__parameters {
         position: absolute;
@@ -70,7 +81,7 @@
         width: 200px;
         height: 0;
         @include reset-style;
-        white-space: nowrap; 
+        white-space: nowrap;
         text-align: right;
         font-weight: normal;
         font-size: 18px;
@@ -81,6 +92,7 @@
     }
     &__values {
         @include reset-style;
+        position: relative;
         white-space: pre-line;
         font-weight: 800;
         font-size: 40px;
