@@ -94,7 +94,7 @@ $(function () {
         nextArrow: '<img class="slider-arrows slider-arrows__next" src="images/next.svg" width="24" height="20" alt="Next">'
     });
 
-    $('<div class="quantity-nav"><div class="quantity-button quantity-up"><img src="images/plus.svg" width="14" height="14" alt="plus"></div><div class="quantity-button quantity-down"><img src="images/minus.svg" width="14" height="14" alt="minus"></div></div>').insertAfter('.quantity input');
+    $('<div class="quantity-nav"><div class="quantity-button quantity-up"><svg width="14" height="14"><use xlink:href="#plus"></use></svg></div><div class="quantity-button quantity-down"><svg width="14" height="4"><use xlink:href="#minus"></use></svg></div></div>').insertAfter('.quantity input');
     $('.quantity').each(function () {
         var spinner = $(this),
             input = spinner.find('input[type="number"]'),
