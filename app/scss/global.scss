@@ -68,7 +68,7 @@ a {
 }
 
 .title {
-  span {
+  div {
     @include reset-style;
     display: inline-block;
     position: relative;
@@ -76,6 +76,9 @@ a {
     font-size: 200px;
     color: rgba(#ffffff, 0.02);
     transform: translateX(-50px);
+  }
+  span {
+    display: inline-block;
   }
   h2 {
     @include reset-style;
@@ -252,7 +255,7 @@ input[type="number"] {
 
 @media (max-width: 1080px) {
   .title {
-    span {
+    div {
       font-size: 165px;
     }
     h2 {
@@ -266,7 +269,7 @@ input[type="number"] {
 
 @media (max-width: 767px) {
   .title {
-    span {
+    div {
       font-size: 90px;
     }
     h2 {

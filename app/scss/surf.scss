@@ -128,6 +128,13 @@
     &--2 {
         top: 270px;
         left: -30px;
+        .map-info {
+            transform: translateX(0);
+            &::before {
+                left: calc(0% + -0.5px);
+                bottom: -21.5px;
+            }
+        }
         .map-dots__circle {
             position: relative;
             &::before {
@@ -193,7 +200,7 @@
     padding: 28px 31px 31px 32px;
     background-color: rgba(#0f1010, 0.7);
     border-radius: 6px;
-
+    z-index: 1;
     &::before {
         position: absolute;
         content: "";

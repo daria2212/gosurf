@@ -47,7 +47,8 @@ gulp.task('js', function () {
 
 gulp.task('libs', function (){
     return gulp.src([
-        'node_modules/slick-carousel/slick/slick.js'
+        'node_modules/slick-carousel/slick/slick.js',
+        'node_modules/wow.js/dist/wow.js'
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -145,6 +146,6 @@ gulp.task('webp', function () {
 
 
 
-gulp.task('build', gulp.series('clean', 'images', 'script', 'svg', 'sprite', 'webp', 'export'));
+gulp.task('build', gulp.series('clean', 'images', 'script', 'svg', 'sprite', 'export'));
 
 gulp.task('default', gulp.parallel('css', 'scss', 'libs', 'js', 'browser-sync', 'watch'));

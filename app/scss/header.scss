@@ -139,6 +139,10 @@
     &__list {
         @include reset-style;
         margin-bottom: 14px;
+        a:hover {
+            transform: scale(1.2);
+            transition: 0.5s;
+        }
         span {
             display: block;
             margin-bottom: 22px;

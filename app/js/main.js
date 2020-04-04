@@ -150,3 +150,5 @@ menuBtn.addEventListener('click', function (evt) {
     menu.classList.toggle('menu--closed');
     menu.classList.toggle('menu--opened');
 });
+
+new WOW().init();

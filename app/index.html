@@ -121,53 +121,53 @@
                 </a>
             </div>
             <button class="aside__toggle toggle toggle--closed">Menu</button>
-                <nav class="aside__menu menu menu--closed">
-                    <ul class="menu__list">
-                        <li>
-                            <a href="#">
-                                <img src="images/nav-1.svg" alt=""><span>Surf</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/nav-2.svg" alt=""><span>Travel</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/nav-3.svg" alt=""><span>Sleep</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="images/nav-4.svg" alt=""><span>Shop</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="header__search">
-                    <svg width="24" height="24">
-                        <use xlink:href="#search"></use>
-                    </svg>
-                </p>
-                <p class="header__date">
-                    20
-                    <span>06 | 2018</span>
-                </p>
-                <p class="header__location">
-                    <svg width="11" height="14">
-                        <use xlink:href="#mark"></use>
-                    </svg>
-                    <span class="header__location-name">California</span>
-                </p>
+            <nav class="aside__menu menu menu--closed">
+                <ul class="menu__list">
+                    <li>
+                        <a href="#surf-section">
+                            <img src="images/nav-1.svg" alt=""><span>Surf</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#travel">
+                            <img src="images/nav-2.svg" alt=""><span>Travel</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#sleep">
+                            <img src="images/nav-3.svg" alt=""><span>Sleep</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#shop">
+                            <img src="images/nav-4.svg" alt=""><span>Shop</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="header__search">
+                <svg width="24" height="24">
+                    <use xlink:href="#search"></use>
+                </svg>
+            </p>
+            <p class="header__date">
+                20
+                <span>06 | 2018</span>
+            </p>
+            <p class="header__location">
+                <svg width="11" height="14">
+                    <use xlink:href="#mark"></use>
+                </svg>
+                <span class="header__location-name">California</span>
+            </p>
         </aside>
         <ul class="header__slider header-slider">
             <li class="header-slider__item slider-item">
                 <div class="slider-item__info">
                     <p class="slider-item__info-shore subtitle-left">Surf</p>
-                    <h2 class="slider-item__info-title">North Shore</h2>
+                    <h2 class="slider-item__info-title animated fadeInLeft delay-1s">North Shore</h2>
                     <p class="slider-item__info-status subtitle-left">Condition</p>
-                    <h3 class="slider-item__info-subtitle">Radical</h3>
+                    <h3 class="slider-item__info-subtitle animated fadeInRight delay-1s">Radical</h3>
                     <a href="#" class="slider-item__info-link">Next
                         <img src="images/next.svg" width="24" height="20" alt="Next">
                     </a>
@@ -207,7 +207,7 @@
                 </div>
             </li>
         </ul>
-        <ul class="header__dots slider-dots">
+        <ul class="header__dots slider-dots animated fadeInUp delay-2s">
             <li class="slider-dots__item dots-item">
                 <div class="dots-box">
                     <p class="dots-box__number">01</p>
@@ -244,22 +244,23 @@
 
     <main class="container">
 
-        <section class="surf">
+        <section class="surf" id="surf-section">
             <div class="title">
-                <span>Surf
-                    <h2 class="title__small">Surf</h2>
-                </span>
+                <div>
+                    <span class="wow fadeInLeft" data-wow-offset="200">Surf</span>
+                    <h2>Surf</h2>
+                </div>
             </div>
             <div class="surf__subtitle">
-                <div class="subtitle">
+                <div class="subtitle wow fadeInRight" data-wow-offset="200">
                     <h3 class="subtitle__subhead subtitle-left">Current location</h3>
                     <h4 class="subtitle__caption">California <span>|</span> USA</h4>
                 </div>
             </div>
-            <ul class="surf__map surf-map">
+            <ul class="surf__map surf-map wow zoomIn" data-wow-offset="400" data-wow-durattion="1.5s">
                 <li class="surf-map__dots map-dots map-dots--1">
-                    <div class="map-dots__circle"></div>
-                    <div class="map-dots__info map-info">
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.1s"></div>
+                    <div class="map-dots__info map-info wow fadeIn" data-wow-delay="2.5s">
                         <header class="map-info__header">
                             <p class="map-info__name">
                                 <span>Airlie Beach</span>
@@ -301,7 +302,7 @@
                     </div>
                 </li>
                 <li class="surf-map__dots map-dots map-dots--2">
-                    <div class="map-dots__circle"></div>
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.2s"></div>
                     <div class="map-dots__info map-info">
                         <header class="map-info__header">
                             <p class="map-info__name">Airlie Beach
@@ -343,7 +344,7 @@
                     </div>
                 </li>
                 <li class="surf-map__dots map-dots map-dots--3">
-                    <div class="map-dots__circle"></div>
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.3s"></div>
                     <div class="map-dots__info map-info">
                         <header class="map-info__header">
                             <p class="map-info__name">Airlie Beach
@@ -385,7 +386,7 @@
                     </div>
                 </li>
                 <li class="surf-map__dots map-dots map-dots--4">
-                    <div class="map-dots__circle"></div>
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.4s"></div>
                     <div class="map-dots__info map-info">
                         <header class="map-info__header">
                             <p class="map-info__name">Airlie Beach
@@ -427,7 +428,7 @@
                     </div>
                 </li>
                 <li class="surf-map__dots map-dots map-dots--5">
-                    <div class="map-dots__circle"></div>
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.5s"></div>
                     <div class="map-dots__info map-info">
                         <header class="map-info__header">
                             <p class="map-info__name">Airlie Beach
@@ -469,7 +470,7 @@
                     </div>
                 </li>
                 <li class="surf-map__dots map-dots map-dots--6">
-                    <div class="map-dots__circle"></div>
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.6s"></div>
                     <div class="map-dots__info map-info">
                         <header class="map-info__header">
                             <p class="map-info__name">Airlie Beach
@@ -511,7 +512,7 @@
                     </div>
                 </li>
                 <li class="surf-map__dots map-dots map-dots--7">
-                    <div class="map-dots__circle"></div>
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.7s"></div>
                     <div class="map-dots__info map-info">
                         <header class="map-info__header">
                             <p class="map-info__name">Airlie Beach
@@ -553,7 +554,7 @@
                     </div>
                 </li>
                 <li class="surf-map__dots map-dots map-dots--8">
-                    <div class="map-dots__circle"></div>
+                    <div class="map-dots__circle wow fadeInDownBig" data-wow-delay="1.8s"></div>
                     <div class="map-dots__info map-info">
                         <header class="map-info__header">
                             <p class="map-info__name">Airlie Beach
@@ -596,19 +597,19 @@
                 </li>
             </ul>
             <ul class="surf__slider surf-slider">
-                <li class="surf-slider__item surf-item"">
-                    <div class="surf-item__inner" style="background-image: url(../images/slide-1@1x.jpg);"">
-                        <h5 class="surf-item__title">Malibu
-                            Beach</h5>
-                        <p class="surf-item__location">California <span>|</span> USA</p>
-                        <div class="surf-item__button">
-                            <a class="button" href="#">
-                                View <span>Surf</span>
-                            </a>
-                        </div>
+                <li class="surf-slider__item surf-item wow fadeInUp" data-wow-offset="200" data-wow-delay=".3s">
+                    <div class=" surf-item__inner" style="background-image: url(../images/slide-1@1x.jpg);">
+                        <h5 class=" surf-item__title">Malibu
+                    Beach</h5>
+                    <p class="surf-item__location">California <span>|</span> USA</p>
+                    <div class="surf-item__button">
+                        <a class="button" href="#">
+                            View <span>Surf</span>
+                        </a>
+                    </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item">
+                <li class="surf-slider__item surf-item wow fadeInUp" data-wow-offset="200" data-wow-delay=".6s">
                     <div class="surf-item__inner" style="background-image: url(../images/slide-2@1x.jpg);">
                         <h5 class="surf-item__title">Airlie
                             Beach</h5>
@@ -620,7 +621,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item">
+                <li class="surf-slider__item surf-item wow fadeInUp" data-wow-offset="200" data-wow-delay=".9s">
                     <div class="surf-item__inner" style="background-image: url(../images/slide-3@1x.jpg);">
                         <h5 class="surf-item__title">Cloud
                             Nine</h5>
@@ -632,7 +633,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item">
+                <li class="surf-slider__item surf-item wow fadeInUp" data-wow-offset="200" data-wow-delay="1.2s">
                     <div class="surf-item__inner" style="background-image: url(../images/slide-4@1x.jpg);">
                         <h5 class="surf-item__title">Vieux
                             Boucau</h5>
@@ -695,17 +696,18 @@
             </ul>
         </section>
 
-        <section class="trip travel">
+        <section class="trip travel" id="travel">
             <div class="title">
-                <span>Travel
+                <div>
+                    <span class="wow fadeInLeft" data-wow-offset="200">Travel</span>
                     <h2>Travel</h2>
-                </span>
+                </div>
             </div>
             <ul class="trip__slider trip-slider">
                 <li class="trip-slider__item trip-item">
                     <header class="trip-item__header" style="background-image: url(images/travelslider-bg.png);">
                         <div class="trip-item__subtitle">
-                            <div class="subtitle">
+                            <div class="subtitle wow fadeInRight" data-wow-offset="200">
                                 <h3 class="subtitle-left">Shore</h3>
                                 <h4 class="subtitle__caption">Airlie Beach <span>|</span> Australia</h4>
                             </div>
@@ -720,28 +722,28 @@
                         </div>
                     </div>
                     <ul class="trip-item__info trip-info">
-                        <li class="trip-info__item">
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay=".3s">
                             <p class="trip-info__parameters">Destination</p>
                             <p class="trip-info__values">Queensland
                                 Australia</p>
                         </li>
-                        <li class="trip-info__item">
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay=".6s">
                             <p class="trip-info__parameters">Distance</p>
                             <p class="trip-info__values">7,065 Miles</p>
                         </li>
-                        <li class="trip-info__item">
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay=".9s">
                             <p class="trip-info__parameters">Travel Time</p>
                             <p class="trip-info__values">23 Hours
                                 5 Minutes</p>
                         </li>
-                        <li class="trip-info__item">
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay="1.2s">
                             <p class="trip-info__parameters">Pricing</p>
                             <p class="trip-info__values">$1,976 USD</p>
                             <span class="trip-info__measure">Round Trip</span>
                         </li>
                     </ul>
                     <div class="trip-item__button">
-                        <a class="button" href="#">
+                        <a class="button wow fadeInUp" data-wow-offset="200" data-wow-delay="1.5s" href="#">
                             Book <span>Flight</span>
                         </a>
                     </div>
@@ -1057,16 +1059,94 @@
             </ul>
         </section>
 
-        <section class="trip sleep">
+        <section class="trip sleep" id="sleep">
             <div class="title">
-                <span>Sleep
+                <div>
+                    <span class="wow fadeInLeft" data-wow-offset="200">Sleep</span>
                     <h2>Sleep</h2>
-                </span>
+                </div>
             </div>
             <ul class="trip__slider trip-slider">
                 <li class="trip-slider__item trip-item">
                     <header class="trip-item__header" style="background-image: url(images/sleepslider-bg.png);">
                         <div class="trip-item__subtitle">
+                            <div class="subtitle wow fadeInRight" data-wow-offset="200">
+                                <h3 class="subtitle-left">Resorts</h3>
+                                <h4 class="subtitle__caption">Auberge <span>|</span> Australia</h4>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="trip-item__descr" style="background-image: url(images/hammock.png);">
+                        <div class="descr">
+                            <h3 class="descr__subtitle">Rating</h3>
+                            <div class="descr__caption-wrapper">
+                                <h4 class="descr__caption">Excellent</h4>
+                                <ul class="descr__rating rating">
+                                    <li>
+                                        <svg width="22" height="22">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="22" height="22">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="22" height="22">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="22" height="22">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </li>
+                                    <li>
+                                        <svg width="22" height="22">
+                                            <use xlink:href="#star"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="trip-item__info trip-info">
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay=".3s">
+                            <p class="trip-info__parameters">Resort</p>
+                            <p class="trip-info__values">Auberge
+                                Australia</p>
+                        </li>
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay=".6s">
+                            <p class="trip-info__parameters"># of Nights</p>
+                            <div class="trip-info__values">
+                                <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
+                                        step="1" value="5"></div>Nights
+                            </div>
+                        </li>
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay=".9s">
+                            <p class="trip-info__parameters"># of Guests</p>
+                            <div class="trip-info__values">
+                                <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
+                                        step="1" value="4"></div>Guests
+                            </div>
+                        </li>
+                        <li class="trip-info__item wow fadeInUp" data-wow-offset="300" data-wow-delay="1.2s">
+                            <p class="trip-info__parameters">Pricing</p>
+                            <div class="trip-info__values"><span class="trip-info__summ summ" data-nights="55"
+                                    data-guests="25"></span> USD</div>
+                            <span class="trip-info__measure">Per Night</span>
+                        </li>
+                    </ul>
+                    <div class="trip-item__button">
+                        <a class="button wow fadeInUp" data-wow-offset="200" data-wow-delay="1.5s" href="#">
+                            Book <span>Flight</span>
+                        </a>
+                    </div>
+                </li>
+                <li class="trip-slider__item trip-item">
+                    <header class="trip-item__header" style="background-image: url(images/sleepslider-bg.png);">
+                        <div class="trip-item__subtitle">
                             <div class="subtitle">
                                 <h3 class="subtitle-left">Resorts</h3>
                                 <h4 class="subtitle__caption">Auberge <span>|</span> Australia</h4>
@@ -1118,14 +1198,14 @@
                             <p class="trip-info__parameters"># of Nights</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
+                                        step="1" value="5"></div>Nights
                             </div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
+                                        step="1" value="4"></div>Guests
                             </div>
                         </li>
                         <li class="trip-info__item">
@@ -1195,14 +1275,14 @@
                             <p class="trip-info__parameters"># of Nights</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
+                                        step="1" value="5"></div>Nights
                             </div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
+                                        step="1" value="4"></div>Guests
                             </div>
                         </li>
                         <li class="trip-info__item">
@@ -1272,14 +1352,14 @@
                             <p class="trip-info__parameters"># of Nights</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
+                                        step="1" value="5"></div>Nights
                             </div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
+                                        step="1" value="4"></div>Guests
                             </div>
                         </li>
                         <li class="trip-info__item">
@@ -1349,14 +1429,14 @@
                             <p class="trip-info__parameters"># of Nights</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
+                                        step="1" value="5"></div>Nights
                             </div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
+                                        step="1" value="4"></div>Guests
                             </div>
                         </li>
                         <li class="trip-info__item">
@@ -1426,14 +1506,14 @@
                             <p class="trip-info__parameters"># of Nights</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
+                                        step="1" value="5"></div>Nights
                             </div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
+                                        step="1" value="4"></div>Guests
                             </div>
                         </li>
                         <li class="trip-info__item">
@@ -1503,14 +1583,14 @@
                             <p class="trip-info__parameters"># of Nights</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
+                                        step="1" value="5"></div>Nights
                             </div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
+                                        step="1" value="4"></div>Guests
                             </div>
                         </li>
                         <li class="trip-info__item">
@@ -1580,88 +1660,15 @@
                             <p class="trip-info__parameters"># of Nights</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
+                                        step="1" value="5"></div>Nights
                             </div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
                             <div class="trip-info__values">
                                 <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
+                                        step="1" value="4"></div>Guests
                             </div>
-                        </li>
-                        <li class="trip-info__item">
-                            <p class="trip-info__parameters">Pricing</p>
-                            <div class="trip-info__values"><span class="trip-info__summ summ" data-nights="55"
-                                    data-guests="25"></span> USD</div>
-                            <span class="trip-info__measure">Per Night</span>
-                        </li>
-                    </ul>
-                    <div class="trip-item__button">
-                        <a class="button" href="#">
-                            Book <span>Flight</span>
-                        </a>
-                    </div>
-                </li>
-                <li class="trip-slider__item trip-item">
-                    <header class="trip-item__header" style="background-image: url(images/sleepslider-bg.png);">
-                        <div class="trip-item__subtitle">
-                            <div class="subtitle">
-                                <h3 class="subtitle-left">Resorts</h3>
-                                <h4 class="subtitle__caption">Auberge <span>|</span> Australia</h4>
-                            </div>
-                        </div>
-                    </header>
-                    <div class="trip-item__descr" style="background-image: url(images/hammock.png);">
-                        <div class="descr">
-                            <h3 class="descr__subtitle">Rating</h3>
-                            <div class="descr__caption-wrapper">
-                                <h4 class="descr__caption">Excellent</h4>
-                                <ul class="descr__rating rating">
-                                    <li>
-                                        <svg width="22" height="22">
-                                            <use xlink:href="#star"></use>
-                                        </svg>
-                                    </li>
-                                    <li>
-                                        <svg width="22" height="22">
-                                            <use xlink:href="#star"></use>
-                                        </svg>
-                                    </li>
-                                    <li>
-                                        <svg width="22" height="22">
-                                            <use xlink:href="#star"></use>
-                                        </svg>
-                                    </li>
-                                    <li>
-                                        <svg width="22" height="22">
-                                            <use xlink:href="#star"></use>
-                                        </svg>
-                                    </li>
-                                    <li>
-                                        <svg width="22" height="22">
-                                            <use xlink:href="#star"></use>
-                                        </svg>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <ul class="trip-item__info trip-info">
-                        <li class="trip-info__item">
-                            <p class="trip-info__parameters">Resort</p>
-                            <p class="trip-info__values">Auberge
-                                Australia</p>
-                        </li>
-                        <li class="trip-info__item">
-                            <p class="trip-info__parameters"># of Nights</p>
-                            <div class="trip-info__values"><div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights</div>
-                        </li>
-                        <li class="trip-info__item">
-                            <p class="trip-info__parameters"># of Guests</p>
-                            <div class="trip-info__values"><div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests</div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters">Pricing</p>
@@ -1679,11 +1686,12 @@
             </ul>
         </section>
 
-        <section class="shop">
+        <section class="shop" id="shop">
             <div class="title">
-                <span>shop
-                    <h2>shop</h2>
-                </span>
+                <div>
+                    <span class="wow fadeInLeft" data-wow-offset="200">Shop</span>
+                    <h2>Shop</h2>
+                </div>
             </div>
             <ul class="shop__slider shop-slider">
                 <li class="shop-slider__item shop-item">
@@ -1733,7 +1741,7 @@
                             </div>
                         </div>
                         <div class="shop-item__product shop-product">
-                            <div class="shop-product__pic">
+                            <div class="shop-product__pic wow fadeInUp" data-wow-offset="400">
                                 <picture>
                                     <img class="shop-product__img" src="images/surfboard.png" width="228" height="695"
                                         alt="Photo of product">
@@ -1765,7 +1773,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="shop-product__inner">
+                            <div class="shop-product__inner wow fadeInUp" data-wow-offset="400" data-wow-delay="0.5s">
                                 <div class="shop-product__title">Extras</div>
                                 <ul class="shop-product__extras shop-extras">
                                     <li class="shop-extras__item">
@@ -1885,16 +1893,16 @@
     </main>
 
     <footer class="footer">
-            <a class="button" href="#">
-                Go <span>Surf</span>
-            </a>
+        <a class="button" href="#">
+            Go <span>Surf</span>
+        </a>
         <p class="footer__copy">© Go-Surf 2018. All Rights Reserved.</p>
     </footer>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/min/libs.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/min/main.min.js"></script>
 </body>
 
 </html>
