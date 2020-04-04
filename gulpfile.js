@@ -146,6 +146,6 @@ gulp.task('webp', function () {
 
 
 
-gulp.task('build', gulp.series('clean', 'images', 'script', 'svg', 'sprite', 'export'));
+gulp.task('build', gulp.series('clean', 'images', 'script', 'svg', 'sprite', 'webp', 'export'));
 
 gulp.task('default', gulp.parallel('css', 'scss', 'libs', 'js', 'browser-sync', 'watch'));

@@ -33,7 +33,7 @@
         .surf-item__button {
             display: block;
         }
-        .surf-item__inner {
+        .surf-item__wrapper {
             background-color: rgba(#1c2121, 0.3);
         }
     }
@@ -41,16 +41,21 @@
 
 .surf-item {
     &__inner {
-        background-blend-mode: multiply;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        min-height: 750px;
+        transition: all 0.5s;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__wrapper {
         position: relative;
         top: 0;
         bottom: 0;
         min-height: 750px;
         background-color: rgba(#1c2121, 0.85);
-        transition: all 0.5s;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
         &:hover {
             background-color: rgba(#1c2121, 0.3);
             .surf-item__button {
