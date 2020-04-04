@@ -72,7 +72,7 @@
         text-transform: uppercase;
         color: rgba(#fff, 0.75);
         top: 30px;
-        right: 0;
+        right: 24px;
     }
     &__parameters {
         position: absolute;
@@ -93,9 +93,122 @@
     &__values {
         @include reset-style;
         position: relative;
-        white-space: pre-line;
+        width: 200px;
         font-weight: 800;
         font-size: 40px;
         line-height: 36px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .trip {
+        padding: 90px 0 225px 0;
+    }
+    .trip-item__descr {
+        padding: 160px 0 0 45px;
+    }
+    .trip-item__subtitle {
+        padding-right: 45px;
+    }
+    .trip-info {
+        margin: 0 45px;
+        flex-wrap: wrap;
+        &__item {
+            width: calc(100% / 2);
+        }
+    }
+    .trip-info__measure {
+        left: 0;
+    }
+}
+
+@media (max-width: 1080px) {
+    .trip {
+        padding: 30px 0 225px 0;
+        background-size: 25%;
+    }
+    .trip-info__item {
+        margin-bottom: 30px;
+        min-height: unset;
+    }
+    .trip-info__parameters {
+        position: static;
+        margin-bottom: 10px;
+        transform: rotate(0deg);
+        width: auto;
+        height: auto;
+        text-align: left;
+    }
+    .trip-info__values {
+        font-size: 36px;
+    }
+    .trip-info__measure {
+        top: 70px;
+    }
+    .trip-item__descr {
+        background-size: 35%;
+    }
+}
+
+@media (max-width: 767px) {
+    .trip {
+        background-image: none;
+        padding: 30px 0 100px 0;
+    }
+    .trip.sleep {
+        background-image: none;
+    }
+    .trip-item__subtitle {
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+    .trip-item__header {
+        background-size: contain;
+        min-height: 600px;
+    }
+    .trip-item__descr {
+        min-height: 200px;
+        padding: 0px 0 0 20px;
+        background-position: right top;
+    }
+    .trip .slider-arrows {
+        top: 140px;
+    }
+    .trip-info {
+        margin: 0 0 30px 20px;
+    }
+    .trip-info__item {
+        width: 100%;
+    }
+    .travel .trip-info {
+        background-image: url(../images/glass.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    .sleep .trip-info {
+        background-image: url(../images/flower-big.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+}
+
+@media (max-width: 500px) {
+    .trip-item__header {
+        min-height: 450px;
+    }
+    .trip-item__descr {
+        min-height: 120px;
+        background-size: 0%;
+        img {
+            display: none;
+        }
+    }
+    .trip-info {
+        background-size: 40%;
+    }
+    .trip-info__values {
+        width: 160px;
+        font-size: 30px;
     }
 }

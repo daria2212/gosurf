@@ -208,7 +208,8 @@ input[type="number"] {
 }
 
 .quantity input {
-  width: 55px;
+  padding: 0;
+  width: 45px;
   height: 42px;
   display: block;
   font-weight: 800;
@@ -247,4 +248,50 @@ input[type="number"] {
 .quantity-button.quantity-down {
   position: absolute;
   right: 25px;
+}
+
+@media (max-width: 1080px) {
+  .title {
+    span {
+      font-size: 165px;
+    }
+    h2 {
+      font-size: 85px;
+    }
+  }
+  .descr__caption {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    span {
+      font-size: 90px;
+    }
+    h2 {
+      font-size: 60px;
+    }
+  }
+  .subtitle-left {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 3px;
+  }
+  .subtitle__caption {
+    font-size: 24px;
+  }
+  .descr {
+    &__caption {
+      font-size: 24px;
+    }
+    &__subtitle {
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 3px;
+    }
+  }
+  .button {
+    font-size: 30px;
+  }
 }

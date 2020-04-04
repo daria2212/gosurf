@@ -115,50 +115,51 @@
             </svg>
         </div>
         <aside class="header__aside aside">
-            <div class="logo">
+            <div class="aside__logo logo">
                 <a href="#">
-                    <img src="images/logo.svg" alt="Logo">
+                    <img src="images/logo.svg" width="160" height="280" alt="Logo">
                 </a>
             </div>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li>
-                        <a href="#">
-                            <img src="images/nav-1.svg" alt=""><span>Surf</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/nav-2.svg" alt=""><span>Travel</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/nav-3.svg" alt=""><span>Sleep</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <img src="images/nav-4.svg" alt=""><span>Shop</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="header__search">
-                <svg width="24" height="24">
-                    <use xlink:href="#search"></use>
-                </svg>
-            </p>
-            <p class="header__date">
-                20
-                <span>06 | 2018</span>
-            </p>
-            <p class="header__location">
-                <svg width="11" height="14">
-                    <use xlink:href="#mark"></use>
-                </svg>
-                <span class="header__location-name">California</span>
-            </p>
+            <button class="aside__toggle toggle toggle--closed">Menu</button>
+                <nav class="aside__menu menu menu--closed">
+                    <ul class="menu__list">
+                        <li>
+                            <a href="#">
+                                <img src="images/nav-1.svg" alt=""><span>Surf</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nav-2.svg" alt=""><span>Travel</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nav-3.svg" alt=""><span>Sleep</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/nav-4.svg" alt=""><span>Shop</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p class="header__search">
+                    <svg width="24" height="24">
+                        <use xlink:href="#search"></use>
+                    </svg>
+                </p>
+                <p class="header__date">
+                    20
+                    <span>06 | 2018</span>
+                </p>
+                <p class="header__location">
+                    <svg width="11" height="14">
+                        <use xlink:href="#mark"></use>
+                    </svg>
+                    <span class="header__location-name">California</span>
+                </p>
         </aside>
         <ul class="header__slider header-slider">
             <li class="header-slider__item slider-item">
@@ -595,8 +596,8 @@
                 </li>
             </ul>
             <ul class="surf__slider surf-slider">
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-1@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item"">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-1@1x.jpg);"">
                         <h5 class="surf-item__title">Malibu
                             Beach</h5>
                         <p class="surf-item__location">California <span>|</span> USA</p>
@@ -607,8 +608,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-2@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-2@1x.jpg);">
                         <h5 class="surf-item__title">Airlie
                             Beach</h5>
                         <p class="surf-item__location">Queensland <span>|</span> Australia</p>
@@ -619,8 +620,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-3@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-3@1x.jpg);">
                         <h5 class="surf-item__title">Cloud
                             Nine</h5>
                         <p class="surf-item__location">Siargao <span>|</span> Philippines</p>
@@ -631,8 +632,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-4@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-4@1x.jpg);">
                         <h5 class="surf-item__title">Vieux
                             Boucau</h5>
                         <p class="surf-item__location">Hossegor <span>|</span> France</p>
@@ -643,8 +644,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-1@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-1@1x.jpg);">
                         <h5 class="surf-item__title">Malibu
                             Beach</h5>
                         <p class="surf-item__location">California <span>|</span> USA</p>
@@ -655,8 +656,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-2@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-2@1x.jpg);">
                         <h5 class="surf-item__title">Airlie
                             Beach</h5>
                         <p class="surf-item__location">Queensland <span>|</span> Australia</p>
@@ -667,8 +668,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-3@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-3@1x.jpg);">
                         <h5 class="surf-item__title">Cloud
                             Nine</h5>
                         <p class="surf-item__location">Siargao <span>|</span> Philippines</p>
@@ -679,8 +680,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="surf-slider__item surf-item" style="background-image: url(../images/slide-4@1x.jpg);">
-                    <div class="surf-item__inner">
+                <li class="surf-slider__item surf-item">
+                    <div class="surf-item__inner" style="background-image: url(../images/slide-4@1x.jpg);">
                         <h5 class="surf-item__title">Vieux
                             Boucau</h5>
                         <p class="surf-item__location">Hossegor <span>|</span> France</p>
@@ -1654,17 +1655,13 @@
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Nights</p>
-                            <div class="trip-info__values">
-                                <div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
-                                        step="1" value="5" id="night"></div>Nights
-                            </div>
+                            <div class="trip-info__values"><div class="trip__quantity quantity"><input class="nights" type="number" min="1" max="9"
+                                        step="1" value="5" id="night"></div>Nights</div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters"># of Guests</p>
-                            <div class="trip-info__values">
-                                <div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
-                                        step="1" value="4" id="guest"></div>Guests
-                            </div>
+                            <div class="trip-info__values"><div class="trip__quantity quantity"><input class="guests" type="number" min="1" max="9"
+                                        step="1" value="4" id="guest"></div>Guests</div>
                         </li>
                         <li class="trip-info__item">
                             <p class="trip-info__parameters">Pricing</p>
@@ -1772,12 +1769,12 @@
                                 <div class="shop-product__title">Extras</div>
                                 <ul class="shop-product__extras shop-extras">
                                     <li class="shop-extras__item">
-                                        <img src="images/wax.png" width="103" height="105" alt="Photo of product">
+                                        <img src="images/wax.png" width="120" height="105" alt="Photo of product">
                                         <p class="shop-extras__name">Sex Wax</p>
                                         <p class="shop-extras__price">$24.99</p>
                                     </li>
                                     <li class="shop-extras__item">
-                                        <img src="images/bracelet.png" width="120" height="81" alt="Photo of product">
+                                        <img src="images/bracelet.png" width="120" height="105" alt="Photo of product">
                                         <p class="shop-extras__name">Pura Vida</p>
                                         <p class="shop-extras__price">$27.99</p>
                                     </li>
@@ -1869,12 +1866,12 @@
                                 <div class="shop-product__title">Extras</div>
                                 <ul class="shop-product__extras shop-extras">
                                     <li class="shop-extras__item">
-                                        <img src="images/wax.png" width="103" height="105" alt="Photo of product">
+                                        <img src="images/wax.png" width="120" height="105" alt="Photo of product">
                                         <p class="shop-extras__name">Sex Wax</p>
                                         <p class="shop-extras__price">$24.99</p>
                                     </li>
                                     <li class="shop-extras__item">
-                                        <img src="images/bracelet.png" width="120" height="81" alt="Photo of product">
+                                        <img src="images/bracelet.png" width="120" height="105" alt="Photo of product">
                                         <p class="shop-extras__name">Pura Vida</p>
                                         <p class="shop-extras__price">$27.99</p>
                                     </li>
@@ -1893,13 +1890,6 @@
             </a>
         <p class="footer__copy">© Go-Surf 2018. All Rights Reserved.</p>
     </footer>
-
-
-
-
-
-
-
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
