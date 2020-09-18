@@ -5,7 +5,7 @@
 * [Node.js >= v.13 (with npm)](https://nodejs.org/en/)
 * [Gulp](https://www.npmjs.com/package/gulp)
 
-## Open the readywebsite
+## Open website
 
 [Click here](https://dariathehuman.github.io/gosurf/)
 
