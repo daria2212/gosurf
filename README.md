@@ -1,9 +1,13 @@
-# 🏄‍♂️ GOSURF - website layoute
+# 🏄‍♂️ GOSURF - website layout
 
 ## Requirements
 
 * [Node.js >= v.13 (with npm)](https://nodejs.org/en/)
 * [Gulp](https://www.npmjs.com/package/gulp)
+
+## Open the readywebsite
+
+[Click here](https://dariathehuman.github.io/gosurf/)
 
 ## Installation 
 
