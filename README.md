@@ -1,3 +1,7 @@
-# gosurf
+# 🏄‍♂️ GOSURF - website layout
 
-https://daria2212.github.io/gosurf/
+It's a deploy branch
+
+## Open website
+
+[Click here](https://dariathehuman.github.io/gosurf/)
