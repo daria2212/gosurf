@@ -7,7 +7,7 @@
 
 ## Open website
 
-[Click here](https://dariathehuman.github.io/gosurf/)
+[Click here](https://recipebookprod.vercel.app/)
 
 ## Installation 
 
