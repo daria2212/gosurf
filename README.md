@@ -7,7 +7,7 @@
 
 ## Open website
 
-[Click here](https://recipebookprod.vercel.app/)
+[Click here](https://gosurf.vercel.app/)
 
 ## Installation 
 
